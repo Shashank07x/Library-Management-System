@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Student Dashboard</h2>
+        <ul>
+            <li><a href="#" onclick="showContent('welcome')">Home</a></li>
+            <li><a href="#" onclick="showContent('my-account')">My Account</a></li>
+            <li><a href="#" onclick="showContent('request-book')">Request Book</a></li>
+            <li><a href="#" onclick="showContent('book-report')">Book Report</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div id="welcome" class="content-section active">
+            <h1>Welcome to Student Dashboard</h1>
+            <p>Select an option from the sidebar to get started.</p>
+        </div>
+
+        <div id="my-account" class="content-section">
+            <h2>My Account</h2>
+            <p>Here you can view and manage your account details.</p>
+        </div>
+
+        <div id="request-book" class="content-section">
+            <h2>Request Book</h2>
+            <p>Request a book from the library.</p>
+        </div>
+
+        <div id="book-report" class="content-section">
+            <h2>Book Report</h2>
+            <p>View the list of books available in the library.</p>
+        </div>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="student-login">
+            <h2>Student Login</h2>
+            <input type="email" id="student-email" placeholder="Email*" required>
+            <input type="password" id="student-password" placeholder="Password*" required>
+            <div class="error-message" id="student-error"></div>
+            <button onclick="validateStudentLogin()">Login</button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+
+        <div class="admin-login">
+            <h2>Admin Login</h2>
+            <input type="email" id="admin-email" placeholder="Email*" required>
+            <input type="password" id="admin-password" placeholder="Password*" required>
+            <div class="error-message" id="admin-error"></div>
+            <button onclick="validateAdminLogin()">Login</button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

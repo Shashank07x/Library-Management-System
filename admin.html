@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="#" onclick="loadAddBookForm()">Add Book</a></li>
+            <li><a href="#" onclick="showContent('book-report')">Book Report</a></li>
+            <li><a href="#" onclick="showContent('book-request')">Book Request</a></li>
+            <li><a href="#" onclick="showContent('add-student')">Add Student</a></li>
+            <li><a href="#" onclick="showContent('student-report')">Student Report</a></li>
+            <li><a href="#" onclick="showContent('issue-book')">Issue Book</a></li>
+            <li><a href="#" onclick="showContent('issue-report')">Issue Report</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <h1>Welcome to Admin Dashboard</h1>
+
+        <div id="dynamic-content"></div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
