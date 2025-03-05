@@ -13,7 +13,7 @@
             <li><a href="#" onclick="loadAddBookForm()">Add Book</a></li>
             <li><a href="#" onclick="showContent('book-report')">Book Report</a></li>
             <li><a href="#" onclick="showContent('book-request')">Book Request</a></li>
-            <li><a href="#" onclick="showContent('add-student')">Add Student</a></li>
+            <li><a href="#" onclick="loadAddStudentForm()">Add Student</a></li>
             <li><a href="#" onclick="showContent('student-report')">Student Report</a></li>
             <li><a href="#" onclick="showContent('issue-book')">Issue Book</a></li>
             <li><a href="#" onclick="showContent('issue-report')">Issue Report</a></li>
@@ -27,6 +27,43 @@
         <div id="dynamic-content"></div>
     </div>
 
+    <div id="book-report" style="display: none;">
+        <h2>Book Report</h2>
+        <table id="book-report-table">
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Publication</th>
+                    <th>Genre</th>
+                    <th>Quantity</th>
+                    <th>Book Photo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="student-report" style="display: none;">
+        <h2>Student Report</h2>
+        <table id="student-report-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Date of Birth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Student data will be loaded dynamically -->
+            </tbody>
+        </table>
+    </div>
+    
     <script src="admin.js"></script>
 </body>
 </html>

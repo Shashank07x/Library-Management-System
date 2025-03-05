@@ -86,3 +86,42 @@ body {
 .content-section.active {
     display: block;
 }
+
+/* Add these styles to your existing student.css */
+#booksTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#booksTable th, #booksTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#booksTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#booksTable img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#booksTable button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#booksTable button:hover {
+    background-color: #0056b3;
+}
